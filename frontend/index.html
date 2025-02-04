@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas de Harry Potter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Películas de Harry Potter</h1>
+
+    
+    <button class="button" id="toggleFilters">
+        <span class="label">Filtrar</span>
+        <svg class="svg-icon" width="20" height="20" viewBox="0 0 20 20">
+            <path fill="none" stroke="#5D41DE" stroke-width="2" d="M1 5h18M3 10h14m-9 5h4"></path>
+        </svg>
+    </button>
+
+    
+    <div id="filterContainer" class="hidden">
+        <label for="search">Buscar por título:</label>
+        <input type="text" id="search" class="input" placeholder="Ejemplo: Harry Potter">
+
+        <label for="year">Filtrar por año:</label>
+        <input type="number" id="year" class="input" placeholder="Ejemplo: 2010">
+
+        <label for="rating">Valoración personal (1-10):</label>
+        <input type="number" id="rating" class="input" min="1" max="10" placeholder="Ejemplo: 7">
+
+        
+        <button class="search-button" onclick="buscarPeliculas()">Buscar</button>
+    </div>
+
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Título</th>
+                <th>Año</th>
+                <th>Valoración Personal</th>
+            </tr>
+        </thead>
+        <tbody id="peliculas-table">
+            
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

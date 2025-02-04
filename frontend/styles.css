@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.input {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+    transition: 300ms ease-in-out;
+    font-size: 1rem;
+    width: 200px;
+    margin: 5px;
+}
+
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+                -13px -13px 100px #ffffff;
+}
+
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  height: 36px;
+  width: 120px;
+  border: none;
+  background: #5e41de33;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 17px;
+  color: #5D41DE;
+  font-family: sans-serif;
+}
+
+.button:hover {
+  background: #5e41de4d;
+}
+
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    float: right;  
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.search-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+td img {
+    display: block;
+    margin: auto;
+    max-width: 120px;
+    height: auto;
+}
